@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin")
 const { CleanWebpackPlugin } = require("clean-webpack-plugin")
 const { DefinePlugin } = require("webpack")
 
-const APP_NAME = "boilerplate-react-ts"
+const APP_NAME = "React todolist with animations"
 
 module.exports = {
 	mode: "development",
