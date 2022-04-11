@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from "react"
 import { Link, Grid, Typography } from "@mui/material"
 import { makeStyles } from "@mui/styles"
-import { GitHub } from "@mui/icons-material"
+import Todolist from "../todolist/Todolist.component"
 //import "./page.scss"
 
 
@@ -26,24 +26,10 @@ const HomePage: FunctionComponent = () =>
 {
 	const classes = styles()
 
-	const gitLinkProps = {
-		target: "_blank",
-		href: "https://www.github.com/Ikonera/react-ts-skeleton"
-	}
-
 	return (
 		<section className={ classes.root }>
 			<Grid container justifyContent="center" alignItems="center" className={ classes.container }>
-				<Grid item alignItems="center">
-					<GitHub fontSize="medium" />
-				</Grid>
-				<Grid item alignItems="center">
-					<Link {...gitLinkProps}>
-						<Typography className={ classes.link }>
-							github.com/Ikonera/boilerplate-react-ts
-						</Typography>
-					</Link>
-				</Grid>
+				<Todolist />
 			</Grid>
 		</section>
 	)

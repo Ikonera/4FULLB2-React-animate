@@ -4,8 +4,6 @@ import { BrowserRouter as Router } from "react-router-dom"
 import { CssBaseline } from "@mui/material"
 import RouterOutlet from "./Components/routerOutlet/RouterOutlet.component"
 import Header from "./Components/header/Header.component"
-import Footer from "./Components/footer/Footer.component"
-
 
 const App: FunctionComponent = () =>
 {
@@ -14,7 +12,6 @@ const App: FunctionComponent = () =>
 			<CssBaseline />
 			<Header />
 			<RouterOutlet />
-			<Footer />
 		</>
     )
 }

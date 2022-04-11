@@ -13,7 +13,7 @@ const Header: FunctionComponent = () =>
 		<AppBar position="static">
 			<Toolbar>
 				<Typography>
-					React-TS-Skeleton
+					React animated todolist
 				</Typography>
 			</Toolbar>
 		</AppBar>
