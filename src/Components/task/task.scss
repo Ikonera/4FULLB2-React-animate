@@ -1,0 +1,12 @@
+#editIcon:hover, #deleteIcon:hover {
+	cursor: pointer;
+}
+
+#editIcon, #deleteIcon {
+	transition: .3s all ease;
+}
+
+#editIcon:hover {
+	transition: .3s transform ease;
+	transform: rotate(45deg);
+}

@@ -9,6 +9,7 @@ const Todolist: FunctionComponent = () => {
 	const [newTask, setNewTask] = useState<string>('')
 
 	const createTask = () => {
+		if (newTask === '') return
 		setTasks([...tasks, { name: newTask, id: uuidv4()}])
 		setNewTask('')
 	}
@@ -25,10 +26,10 @@ const Todolist: FunctionComponent = () => {
 		<Grid>
 			<Grid container alignItems="center">
 				<Grid item>
-					<TextField name="newTaskName" value={newTask} placeholder="Nouvelle tache" autoFocus onChange={event => setNewTask(event.target.value)} onKeyDown={event => handleEnterKey(event.key) } />
+					<TextField variant="standard" name="newTaskName" value={newTask} placeholder="Nouvelle tache" autoFocus onChange={event => setNewTask(event.target.value)} onKeyDown={event => handleEnterKey(event.key) } />
 				</Grid>
 				<Grid item>
-					<Button onClick={_ => createTask()}>Nouvelle tache</Button>
+					<Button id="createTask" onClick={_ => createTask()}>Nouvelle tache</Button>
 				</Grid>
 			</Grid>
 			{(tasks.length !== 0) && tasks.map((task: {name: string, id: string}) => (

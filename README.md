@@ -1,25 +1,26 @@
-# React-TS-Boilerplate
+# React animated todolist - Gabriel MILLET & Chloe STIZI
 ## Description
-Template repo for ReactTS projects.
 
-## Available scripts
+Projet de todolist animee a chaque interaction utilisateur.
 
-- Download all project packages
+Liste des fonctionnalites :
+
+1. Ajout d'une tache : interaction => slide du composant `Task` de la droite vers la gauche.
+2. Modification du nom d'une tache : interaction => rotation du logo d'edition.
+3. Suppression d'une tache : interaction => "collasping" du composant `Task` vers le haut.
+
+Description des composants:
+
+Habillage avec MUI, animations avec SCSS et animejs.
+
+### Scripts
+
+Installation des dependances :
 ```shell
-npm install
+yarn && yarn dev
+```
+Tests :
+```shell
+jest
 ```
 
-- Run the app in development mode (HR)
-```shell
-npm run dev
-```
-
-- Build the app
-```shell
-npm run build
-```
-
-## Dockerize app
-```shell
-docker-compose up -d
-```
